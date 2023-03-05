@@ -42,7 +42,8 @@ Another altertive is to use PlatformIO as your IDE environment which provide bet
 
 #### Install pymcuprog
 
-Intead of using the build-in programmer that is tightly integreated with megaTinyCore and works well with Arduino IDE, but not with PlatformIO, we recommend to download and install the [pymcuprog · PyPI](https://pypi.org/project/pymcuprog/) from Microchip.
+The build-in programmer that is tightly integreated with megaTinyCore and works well with Arduino IDE, but not with PlatformIO. We recommend to 
+download and install the [pymcuprog](https://pypi.org/project/pymcuprog/) from Microchip.
 
 #### Configure PlatformIO.ini
 
@@ -74,7 +75,8 @@ upload_flags =
 upload_command = pymcuprog write --erase $UPLOAD_FLAGS --filename $SOURCE
 ```
 
-The `monitor_rts = 0` flag is only required when operatiing under MacOS with Apple Silicon, it ensures that terminal would works upon opening correctly.
+The `monitor_rts = 0` flag is only required when operating under MacOS with Apple Silicon, it ensures the terminal would activated upon opening 
+correctly.
 
 ## Working with MegaCoreX
 
