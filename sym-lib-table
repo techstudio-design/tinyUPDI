@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "SerialUPDI-rescue")(type "Legacy")(uri "${KIPRJMOD}/SerialUPDI-rescue.lib")(options "")(descr ""))
+  (lib (name "tinyUPDI-rescue")(type "Legacy")(uri "${KIPRJMOD}/tinyUPDI-rescue.lib")(options "")(descr ""))
+)
