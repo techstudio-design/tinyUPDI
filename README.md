@@ -6,7 +6,13 @@ The ***tinyUPDI*** is a tiny programmer uses for programming *any* AVR that sup
 
 ### Why did you make it?
 
-Many AVR MCU developers in the past, we included, hacks together a USB Serial adaptor with a few components together for programming UPDI-capable AVR chips. Those hacks work as a UPDI programmer, it is however requires two USB/UART ports, one as UPDI programming port and another for debugging port.  The *tinyUPDI* supports automatic switch between UPDI and UART interfaces via a single USB port, saving the needs to have two USB ports (one for UPDI and another for serial debugging printout).
+Many modern AVR developers in the past, we included, hacks together a USB Serial adaptor with a few components 
+together 
+for programming UPDI-capable AVR chips. Those hacks work as a UPDI programmer, it is however in reality often 
+requires another USB/UART 
+ports for serial debugging printout.  The *tinyUPDI* 
+supports automatic switch 
+between UPDI and UART interfaces via a single USB port, saving the needs for connecting two USB ports.
 
 ### What makes it special?
 
