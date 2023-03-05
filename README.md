@@ -78,4 +78,6 @@ The `monitor_rts = 0` flag is only required when operatiing under MacOS with App
 
 ### Working with MegaCoreX
 
-Unfortunately at this moment, we don't have any MCU to the tinyUPDI but we think it should work. We will provide update of this section once we have the chance to test it.
+Unfortunately at this moment, we don't have any MCU chip/board running with MegaCoreX with us to test the tinyUPDI 
+but we think it very likely should work without any extra issue other than what we covered here. We will provide 
+an update of this section once we have the chance to test it.
