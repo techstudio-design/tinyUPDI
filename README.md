@@ -2,13 +2,11 @@
 
 The ***tinyUPDI*** is a tiny programmer uses for programming *any* AVR that supports SerialUPDI interface. Unlike other UPDI programmers, it only requires one USB port and automatically switches between UPDI programming and debugging serial mode.
 
-
+![tinyUPDI](https://github.com/techstudio-design/tinyUPDI/blob/main//tinyUPDI.png)
 
 ### Why did you make it?
 
 Many AVR MCU developers in the past, we included, hacks together a USB Serial adaptor with a few components together for programming UPDI-capable AVR chips. Those hacks work as a UPDI programmer, it is however requires two USB/UART ports, one as UPDI programming port and another for debugging port.  The *tinyUPDI* supports automatic switch between UPDI and UART interfaces via a single USB port, saving the needs to have two USB ports (one for UPDI and another for serial debugging printout).
-
-
 
 ### What makes it special?
 
@@ -20,11 +18,7 @@ Many AVR MCU developers in the past, we included, hacks together a USB Serial ad
 - No USB driver required for macOS, Windows and Linux (kernel v2.6.12 onward)
 - Capable of powering target board (5v only) directly via the 6-pin programming header from USB power source
 
-
-
 ### Working with megaTinyCore/DxCore
-
-
 
 #### Arduino IDE
 
@@ -34,11 +28,7 @@ Instead of using the SerialUPDI implementation `pymcuprog.py` from Microchip, me
 
 The tinyUPDI works well under the Windows, Linux and MacOS in general. However, when using it with MacOS Apple Silicon machines, it does not output data to the Serial Monitor of Arduino IDE for some unknown reason. One workaround is to use an external terminal software such as [CoolTerm]([CoolTerm - Download](https://coolterm.en.lo4d.com/windows) where DTR state can be set, this works but is not seemless as you would need to disconnect the terminal before the programming.
 
-
-
 Another altertive is to use PlatformIO as your IDE environment which provide better user experience between progamming mode and serial debugging mode. 
-
-
 
 #### PlatformIO
 
@@ -76,12 +66,9 @@ upload_flags =
     --clk
     $UPLOAD_SPEED
 upload_command = pymcuprog write --erase $UPLOAD_FLAGS --filename $SOURCE
-
 ```
 
 The `monitor_rts = 0` flag is only required when operatiing under MacOS with Apple Silicon, it ensures that terminal would works upon opening correctly.
-
-
 
 ### Working with MegaCoreX
 
